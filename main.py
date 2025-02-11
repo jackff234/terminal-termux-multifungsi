@@ -1,7 +1,6 @@
 import os
 import subprocess
 import colorama
-import pyfiglet
 import numpy as np
 import socket
 import random
@@ -27,8 +26,7 @@ shortcuts = {
 
 def show_menu():
     os.system("clear")
-    logo = pyfiglet.figlet_format("Key X Amosr", font="doom")
-    print(f"{Fore.CYAN}{logo}{Style.RESET_ALL}")
+    print(f"{Fore.CYAN}=== Key X Amosr ==={Style.RESET_ALL}")
     print(f"{Fore.GREEN}Terminal multi fungsi - pilih angka untuk fitur cepat:\n")
     print(f"""{Fore.YELLOW}
           1 > Update termux
