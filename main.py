@@ -8,6 +8,7 @@ import random
 import threading
 import time
 import requests
+from colorama import fore, Style
 
 colorama.init(autoreset=True)
 
